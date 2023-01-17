@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.yuehai.stone.core.datastore";
+option java_multiple_files = true;
+
+message TokenProto {
+  string access_token = 1 ;
+  string token_type = 2 ;
+  string refresh_token = 3 ;
+  int64 expires_in = 4;
+  string scope = 5 ;
+}
